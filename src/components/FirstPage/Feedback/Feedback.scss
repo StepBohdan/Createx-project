@@ -1,0 +1,160 @@
+.feedback {
+  background-color: rgba(30, 33, 44, 1);
+
+  .feedback-wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 80px;
+
+    .feedback-info {
+      .feedback-title {
+        font-family: Lato;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 59.8px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 55px;
+      }
+      .ph-title {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 13px;
+      }
+
+      .top-inputs {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 25px;
+
+        .top-input {
+          display: block;
+          width: 285px;
+          padding: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 4px;
+          background-color: #393c46;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25.6px;
+          text-align: left;
+        }
+      }
+      .bottom-input {
+        display: block;
+        width: 626px;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        background-color: #393c46;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+      }
+
+      .feedback-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+
+        .checkbox-label {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .checkbox-label input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 6px;
+          left: 0;
+          height: 16px;
+          width: 16px;
+          background-color: #eee;
+          border-radius: 3px;
+        }
+
+        .checkbox-label:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+
+        .checkbox-label input:checked ~ .checkmark {
+          background-color: rgba(119, 114, 241, 1);
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .checkbox-label input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkbox-label .checkmark:after {
+          left: 5px;
+          top: 2px;
+          width: 3px;
+          height: 7px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .checkbox-text {
+          display: flex;
+          width: 287px;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25.6px;
+          text-align: left;
+          align-items: end;
+          color: rgba(255, 255, 255, 1);
+        }
+
+        .feedback-btn {
+          font-family: Lato;
+          font-size: 16px;
+          height: 52px;
+          font-weight: 700;
+          line-height: 52px;
+          letter-spacing: 0.5px;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+          padding: 0px 32px;
+          background-color: rgba(119, 114, 241, 1);
+          border-radius: 4px;
+          border: 1px solid rgba(119, 114, 241, 1);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

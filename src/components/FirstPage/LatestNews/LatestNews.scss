@@ -1,0 +1,104 @@
+.latest-news {
+  margin: 0 auto;
+  max-width: 1280px;
+  margin-top: 100px;
+  padding-bottom: 121px;
+  .latest-news-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    .latest-news-title {
+      font-family: Lato;
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 59.8px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+      margin-bottom: 40px;
+    }
+    .latest-news-subtitle {
+      width: 285px;
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      color: rgba(66, 69, 81, 1);
+      margin-bottom: 60px;
+      margin-right: 100px;
+    }
+    .latest-news-btn {
+      display: block;
+      width: 180px;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 44px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      text-decoration: none;
+      background-color: rgba(119, 114, 241, 1);
+      border-radius: 4px;
+      color: rgba(255, 255, 255, 1);
+    }
+    .image-legend {
+      display: flex;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      color: rgba(120, 122, 128, 1);
+      align-items: center;
+      gap: 5px;
+      margin-top: 16px;
+
+      .line {
+        width: 12px;
+        rotate: 90deg;
+        border-radius: 4px;
+        border: 0.5px solid rgb(164, 167, 175);
+      }
+    }
+    .image-title {
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .image-subtitle {
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      text-align: left;
+      color: rgba(66, 69, 81, 1);
+      margin-bottom: 15px;
+    }
+    .image-btn {
+      display: flex;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25.6px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+      text-decoration: none;
+      text-align: center;
+      gap: 7px;
+
+      svg {
+        transform: rotate(180deg);
+        margin: auto 0;
+        path {
+          fill: rgba(119, 114, 241, 1);
+        }
+      }
+    }
+  }
+}

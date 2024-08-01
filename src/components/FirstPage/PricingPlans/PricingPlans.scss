@@ -1,0 +1,199 @@
+.pricing-plans {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+
+  .pricing-plans-title {
+    font-family: Lato;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 59.8px;
+    text-align: center;
+    color: rgba(30, 33, 44, 1);
+  }
+
+  .plan-switcher {
+    display: flex;
+    margin: 60px auto;
+    width: 390px;
+    border-radius: 40px;
+    border: 1px solid rgba(119, 114, 241, 1);
+    position: relative;
+
+    .plan-switcher-btn {
+      font-family: Lato;
+      display: flex;
+      justify-content: center;
+      width: 200px;
+      padding: 10px 15px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25.6px;
+      text-align: center;
+      color: rgba(119, 114, 241, 1);
+      border-radius: 40px;
+      text-decoration: none;
+      padding: 10px 10px;
+    }
+
+    .discount {
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: left;
+      color: rgba(119, 114, 241, 1);
+      margin-left: 10px;
+    }
+
+    .active {
+      background-color: rgba(119, 114, 241, 1);
+      border-radius: 40px;
+      width: 300px;
+      color: rgba(255, 255, 255, 1);
+      padding-right: 10px;
+
+      .discount {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .pricing-plans-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .pricing-plans-list-item {
+      text-align: center;
+      border: 1px solid rgba(119, 114, 241, 0.4);
+      border-radius: 4px;
+
+      position: relative;
+
+      .card {
+        display: block;
+        width: 390px;
+        padding: 40px 0;
+
+        .card-title {
+          font-family: Lato;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 42px;
+          text-align: center;
+          color: rgba(30, 33, 44, 1);
+          margin-bottom: 5px;
+        }
+        .card-subtitle {
+          display: flex;
+          justify-content: center;
+          font-family: Lato;
+          font-size: 46px;
+          font-weight: 900;
+          line-height: 59.8px;
+          text-align: center;
+          color: rgba(119, 114, 241, 1);
+          margin-bottom: 35px;
+
+          .card-subtitle-month {
+            align-items: start;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+            color: rgba(119, 114, 241, 1);
+            margin-left: 10px;
+          }
+        }
+        .line {
+          position: absolute;
+          width: 100%;
+          background-color: rgba(218, 219, 221, 0);
+
+          border: 1px solid;
+          border-image-source: linear-gradient(
+            270.01deg,
+            rgba(218, 219, 221, 0) 0%,
+            rgba(218, 219, 221, 0.5) 12.33%,
+            #dadbdd 51.91%,
+            rgba(218, 219, 221, 0.5) 87.85%,
+            rgba(218, 219, 221, 0) 100%
+          );
+          border-image-slice: 1;
+
+          left: 0px;
+          top: 165px;
+        }
+        .benefits-list {
+          margin-bottom: 30px;
+          margin-left: 95px;
+
+          .benefits-list-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            text-align: center;
+            margin-bottom: 5px;
+            color: rgba(30, 33, 44, 1);
+          }
+          .grey {
+            display: flex;
+            color: rgba(154, 156, 165, 1);
+            gap: 10px;
+          }
+        }
+        .card-btn {
+          display: block;
+          width: 146px;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 44px;
+          letter-spacing: 0.5px;
+          text-align: center;
+          color: rgba(119, 114, 241, 1);
+          text-decoration: none;
+          border: 1px solid rgba(119, 114, 241, 1);
+          border-radius: 4px;
+          margin: 0 auto;
+        }
+      }
+      .dark {
+        background-color: rgba(30, 33, 44, 1);
+        border: 1px solid rgba(3, 206, 164, 1);
+        border-radius: 4px;
+
+        .card-title {
+          color: rgba(255, 255, 255, 1);
+        }
+        .card-subtitle {
+          color: rgba(3, 206, 164, 1);
+          .card-subtitle-month {
+            color: rgba(3, 206, 164, 1);
+          }
+        }
+        .benefits-list {
+          .benefits-list-item {
+            color: rgba(255, 255, 255, 1);
+
+            .dark-mark {
+              path {
+                fill: rgba(3, 206, 164, 1);
+              }
+            }
+          }
+        }
+        .card-btn {
+          background-color: rgba(119, 114, 241, 1);
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}

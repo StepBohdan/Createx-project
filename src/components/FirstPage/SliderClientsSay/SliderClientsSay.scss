@@ -1,0 +1,115 @@
+.slider-say {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding-bottom: 80px;
+
+  .slider-say-title {
+    font-family: Lato;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 59.8px;
+    text-align: left;
+    color: rgba(30, 33, 44, 1);
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  .slides {
+    position: relative;
+
+    .card {
+      display: block;
+      width: 1020px;
+      margin: 0 auto;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+      position: relative;
+
+      .card-wrapper {
+        padding: 65px 105px 65px 165px;
+        .card-title {
+          font-family: Lato;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          text-align: left;
+          color: rgba(66, 69, 81, 1);
+          width: 752px;
+          margin-bottom: 25px;
+        }
+
+        .lines {
+          content: "";
+          position: absolute;
+          top: 65px;
+          left: 105px;
+        }
+        .card-bottom {
+          display: flex;
+
+          .card-image {
+            margin-right: 20px;
+          }
+          .card-text {
+            margin: auto 0;
+
+            .card-text-title {
+              font-family: Lato;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 25.6px;
+              text-align: left;
+              color: rgba(30, 33, 44, 1);
+            }
+            .card-text-subtitle {
+              font-family: Lato;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 21px;
+              text-align: left;
+              color: rgba(120, 122, 128, 1);
+            }
+          }
+        }
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      z-index: 10;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      outline: none;
+    }
+
+    .swiper-button-prev {
+      color: rgba(66, 69, 81, 1);
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .swiper-button-next {
+      right: 10px;
+      top: 50%;
+
+      transform: translateY(-50%) rotate(180deg);
+
+      background-color: rgba(119, 114, 241, 1);
+
+      path {
+        fill: white;
+      }
+    }
+  }
+}

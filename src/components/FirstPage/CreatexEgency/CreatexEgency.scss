@@ -1,0 +1,64 @@
+.createx-egency {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 132px;
+  .createx-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .createx-title {
+      font-family: Lato;
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 59.8px;
+      text-align: left;
+      margin-bottom: 55px;
+    }
+    .createx-text {
+      width: 389px;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      text-align: left;
+      color: rgba(120, 122, 128, 1);
+      margin-bottom: 55px;
+    }
+    .createx-btn {
+      display: block;
+      width: 161px;
+      text-decoration: none;
+      background: rgba(119, 114, 241, 1);
+      color: rgba(255, 255, 255, 1);
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 44px;
+      text-align: center;
+      border-radius: 4px;
+
+      .createx-btn-text {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  .createx-progress-list {
+    display: flex;
+    width: 736px;
+    margin: 0 auto;
+    gap: 50px;
+    margin-top: 177px;
+    margin-bottom: 180px;
+
+    .createx-progress-list-item-text {
+      text-align: center;
+      font-family: Lato;
+      margin-top: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: rgba(66, 69, 81, 1);
+    }
+  }
+}
