@@ -1,19 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import FirstPage from './Pages/FirstPage/FirstPage';
+import SecondPage from './Pages/SecondPage/SecondPage';
+import ThirdPage from './Pages/ThirdPage/ThirdPage';
 
-import './App.css'
-import Header from './components/FirstPage/Header/Header'
-import Rewards from './components/FirstPage/Rewards/Rewards'
-import Main from './components/FirstPage/Main/Main'
-import Footer from './components/FirstPage/Footer/Footer'
+import './App.css';
 
 function App() {
-return(
-  <>
-  <Header/>
-  <Rewards/>
-  <Main/>
-  <Footer/>
-  </>
-)
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<FirstPage />} />
+        <Route path="/services" element={<SecondPage />} />
+        <Route path='/services/seo' element={<ThirdPage/>} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
