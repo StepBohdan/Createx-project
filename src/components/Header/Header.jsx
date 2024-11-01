@@ -8,7 +8,10 @@ import Content from "./HeaderImages/content.svg?react"
 import Arrow from "./HeaderImages/arrow.svg?react"
 import MainBackground from "./HeaderImages/background.png"
 import ServicesBackground from "./HeaderImages/servicesbackground.png"
+import CaseStudiesBackground from "./HeaderImages/caseStudiesBackground.png"
+import OrSaleBackground from "./HeaderImages/orSaleBackground.png"
 import SeoBackground from "./HeaderImages/backgroundseo.png"
+import OrSaleLogo from "./HeaderImages/orSaleLogo.svg?react"
 import Phone from "./HeaderImages/iPhone.svg?react"
 
 import "./Header.scss"
@@ -35,13 +38,17 @@ export default function Header() {
   const isMainHeader = location.pathname === "/";
   const isServices = location.pathname === "/services";
   const isSeo = location.pathname === "/services/seo";
+  const isCaseStudies = location.pathname === "/case-studies"
+  const isOrSale = location.pathname === "/case-studies/or-sale"
   
   const backgroundImage = isMainHeader ? MainBackground
                     : isSeo ? SeoBackground 
                     : isServices ? ServicesBackground
+                    : isCaseStudies ? CaseStudiesBackground
+                    : isOrSale ? OrSaleBackground
                     : 'none';
                     // onClick={toogleModal}
-
+                    console.log(backgroundImage);
 
   return (
 <header style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
@@ -75,7 +82,7 @@ export default function Header() {
                
             
             </li>
-            <li> <a className="header-menu-list-item" href="#">Case Studies</a></li>
+            <li> <Link to="/case-studies" className="header-menu-list-item" href="#">Case Studies</Link></li>
             <li> <a className="header-menu-list-item" href="#">About Us</a></li>
             <li> <a className="header-menu-list-item" href="#">Blog</a></li>
             <li> <a className="header-menu-list-item" href="#">Contacts</a></li>
@@ -126,7 +133,32 @@ export default function Header() {
       </div>
       </>
 
-      ) : null}
+      ): isCaseStudies ? (
+        <>
+        <div className="main-header-main">
+            <div className="route"></div>
+            <h1 className="main-header-title">Case Studies</h1>
+            <p className="main-header-subtitle">We help our clients get better results with our creative and data-driven approach to online advertising. View our case study portfolio and learn more about the process that sets us apart.</p>
+          </div>
+        <div className="form-wrap">
+          <label>
+        <p className="ph-title">Email</p>
+        <div className='form'><input className='form-input' type="text" placeholder='Your working email' /><a className='form-btn' href="#">Subscribe</a></div>
+        </label>
+        
+        </div>
+        </>
+  
+      ) : isOrSale ? (
+        <>
+        <div className="main-header-main">
+            <div className="route"></div>
+            <h1 className="main-header-title"><OrSaleLogo/></h1>
+            <p className="main-header-subtitle case-studies-item">200% increase in conversion rate for Lovato Company</p>
+          </div>
+        </>
+  
+    ) : null}
     
 
 </header>     

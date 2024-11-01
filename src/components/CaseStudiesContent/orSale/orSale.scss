@@ -1,0 +1,286 @@
+.or-sale {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 180px;
+  padding-top: 50px;
+
+  .or-sale-stats {
+    display: flex;
+    gap: 60px;
+
+    .stats-wrap {
+      display: flex;
+
+      svg {
+        margin-right: 20px;
+      }
+      .stats-text {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: rgba(30, 33, 44, 1);
+
+        .bold {
+          font-family: Lato;
+          font-size: 32px;
+          font-weight: 900;
+          line-height: 41.6px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .or-sale-stats-discription {
+    display: block;
+    width: 705px;
+    margin: 80px 0;
+
+    .or-sale-stats-discription-title {
+      //styleName: lead/bold;
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+      margin-bottom: 24px;
+    }
+    .or-sale-stats-discription-subtitle {
+      //styleName: base/regular;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      text-align: left;
+      color: rgba(66, 69, 81, 1);
+    }
+  }
+  .or-sale-strategies {
+    margin-top: 80px;
+
+    .or-sale-strategies-title {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 41.6px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+    }
+    .or-sale-strategies-list {
+      margin: 24px 0;
+
+      .or-sale-strategies-item {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        display: flex;
+        align-items: center;
+
+        color: rgba(66, 69, 81, 1);
+
+        svg {
+          margin-right: 16px;
+        }
+      }
+    }
+    .or-sale-strategies-text {
+      width: 705px;
+      color: rgba(66, 69, 81, 1);
+      //styleName: base/regular;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      text-align: left;
+      margin-bottom: 80px;
+    }
+  }
+  .or-sale-goals {
+    margin-top: 80px;
+
+    .or-sale-goals-title {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 41.6px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+    }
+    .or-sale-goals-list {
+      margin: 24px 0;
+
+      .or-sale-goals-item {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        display: flex;
+        align-items: center;
+
+        color: rgba(66, 69, 81, 1);
+
+        svg {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+  .or-sale-results {
+    margin-top: 60px;
+
+    .or-sale-results-title {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 41.6px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+    }
+    .or-sale-results-list {
+      margin: 24px 0;
+
+      .or-sale-results-item {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        display: flex;
+        align-items: center;
+
+        color: rgba(66, 69, 81, 1);
+
+        svg {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .or-sale-additional-content-box {
+    background-color: #f4f5f6;
+    border-radius: 4px;
+    padding: 40px 32px;
+    margin-bottom: 48px;
+
+    .or-sale-about {
+      .or-sale-about-title {
+        //styleName: h4;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31.2px;
+        text-align: left;
+        color: rgba(30, 33, 44, 1);
+        margin-bottom: 12px;
+      }
+      .or-sale-about-subtitle {
+        width: 326px;
+        //styleName: small/regular;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: rgba(66, 69, 81, 1);
+        margin-bottom: 24px;
+      }
+    }
+    .or-sale-industry {
+      .or-sale-industry-title {
+        //styleName: h4;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31.2px;
+        text-align: left;
+        color: rgba(30, 33, 44, 1);
+        margin-bottom: 12px;
+      }
+      .or-sale-industry-subtitle {
+        //styleName: small/regular;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: rgba(66, 69, 81, 1);
+        margin-bottom: 24px;
+      }
+    }
+    .or-sale-services {
+      .or-sale-services-title {
+        //styleName: h4;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31.2px;
+        text-align: left;
+        color: rgba(30, 33, 44, 1);
+        margin-bottom: 12px;
+      }
+      .or-sale-services-list {
+        .or-sale-services-item {
+          //styleName: small/regular;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+
+          color: rgba(66, 69, 81, 1);
+
+          svg {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+  .or-sale-additional-content-btns {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+
+    .or-sale-additional-content-btn {
+      border-radius: 4px;
+      border: 1px solid rgba(215, 218, 221, 1);
+      text-decoration: none;
+      padding: 5.5px 16px;
+      //styleName: small/bold;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left;
+      color: rgba(120, 122, 128, 1);
+
+      &:hover {
+        background-color: rgba(119, 114, 241, 1);
+        border: 1px solid transparent;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  .logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .sharing {
+      //styleName: lead/bold;
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      text-align: left;
+      color: rgba(30, 33, 44, 1);
+    }
+  }
+}
